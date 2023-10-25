@@ -1,3 +1,12 @@
+void variablesMain() {
+  varTest();
+  dynamicTest();
+  nullSafetyTest();
+  finalTest();
+  lateTest();
+  constTest();
+}
+
 // 초기화
 void varTest() {
   var name = 'ordi';
@@ -43,3 +52,18 @@ void finalTest() {
 
   print(name + some);
 }
+
+void lateTest() {
+  late final String name;
+  // print(name); // 컴파일러 에러
+  name = 'ordi';
+  print(name);
+}
+
+void constTest() {
+  // const message = constFunc('the'); // 컴파일러 에러
+  const message = 'finish, the chapter of variables.\n';
+  print(message);
+}
+
+String constFunc(String somthing) => 'what, $somthing';
