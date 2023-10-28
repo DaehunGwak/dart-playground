@@ -31,7 +31,7 @@ void listType() {
     1,
     2,
     3,
-    if (false) 4, // collection if
+    // if (false) 4, // collection if
     if (true) 5,
   ];
   print(numbers); // [1, 2, 3, 5];
@@ -96,7 +96,7 @@ void collectionFor() {
  }
 
  void setTest() {
-  var s = {1, 2, 3, 1};
+  var s = {1, 2, 3};
   s.add(3);
   print(s);
  }

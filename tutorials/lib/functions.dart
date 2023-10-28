@@ -38,9 +38,9 @@ void qqOperator() {
 
   // qq assign
   String? name;
-  print(name?.toUpperCase()); // null return
+  // print(name?.toUpperCase()); // null return
   name ??= 'ooooo'; // name 이 null 이라면 assign
-  print(name?.toUpperCase());
+  // print(name?.toUpperCase());
 }
 
 String capitalizeName1(String? name) {
